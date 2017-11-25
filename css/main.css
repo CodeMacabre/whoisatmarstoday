@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  font-family: sans-serif;
+  width: 100vw;
+  min-width: 320px;
+  background: #202025;
+}
+
+/* MAIN AREA */
+main {
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+  height: calc(100vh - 50px);
+}
+.grid {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "count count count count count count count count count"
+    "count count count count count count count count count"
+    "stats stats stats stats stats stats stats stats stats"
+    "name  name  name  orig  orig  sol   sol   day   day  "
+}
+.count-area {
+  grid-area: count;
+  background: #202025;
+  color: #ffffff;
+  text-align: center;
+  align-self: center;
+  /* justify-self: center; */
+}
+.stats-area {
+  grid-area: stats;
+  background: #ffffff;
+  color: #101013;
+  text-align: center;
+}
+.name-area {
+  grid-area: name;
+  background: #ffffff;
+  color: #101013;
+}
+.origin-area {
+  grid-area: orig;
+  background: #ffffff;
+  color: #101013;
+}
+.sol-area {
+  grid-area: sol;
+  background: #ffffff;
+  color: #101013;
+}
+.day-area {
+  grid-area: day;
+  background: #ffffff;
+  color: #101013;
+}
+ul {
+  list-style: none;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  justify-content: right;
+  background: #202025;
+}
+footer p {
+  color: #ffffff;
+}

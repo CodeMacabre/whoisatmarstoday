@@ -1,8 +1,10 @@
-# whoisonmarsrightnow.com
+# Who is on Mars Today?
 
 ## Overview
-whoisonmarsrightnow.com (working title / url) is an automatically updated website listing the robots (and eventually humans) currently on the surface of Mars.
+[whoisonmars.today](https://whoisonmars.today) is an automatically updated website listing the robots (and eventually humans) currently on the surface of Mars.
+
+This is a work-in-progress, inspired by [howmanypeopleareinspacerightnow.com/](https://www.howmanypeopleareinspacerightnow.com/).
 
 Possible future expansions include:
-+ All defunct robots (e.g. Spirit, Beagle 2)
-+ Orbiters
++ Current Orbiters
++ Defunct robots (e.g. Spirit, Beagle 2)
