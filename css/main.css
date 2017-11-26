@@ -24,7 +24,7 @@ main {
   grid-template-areas:
     "count count count count count count count count count"
     "count count count count count count count count count"
-    "stats stats stats stats stats stats stats stats stats"
+    "count count count count count count count count count"
     "name  name  name  orig  orig  sol   sol   day   day  "
 }
 .count-area {
@@ -34,12 +34,6 @@ main {
   text-align: center;
   align-self: center;
   /* justify-self: center; */
-}
-.stats-area {
-  grid-area: stats;
-  background: #ffffff;
-  color: #101013;
-  text-align: center;
 }
 .name-area {
   grid-area: name;
@@ -60,6 +54,12 @@ main {
   grid-area: day;
   background: #ffffff;
   color: #101013;
+}
+h1 {
+  font-size: 7em;
+}
+P {
+  font-size: 1em;
 }
 ul {
   list-style: none;
