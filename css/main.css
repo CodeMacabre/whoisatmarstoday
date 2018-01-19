@@ -25,7 +25,7 @@ main {
     "count count count count count count count count count"
     "count count count count count count count count count"
     "count count count count count count count count count"
-    "name  name  name  orig  orig  sol   sol   day   day  "
+    "name  name  orig  orig  type  launc launc arriv arriv"
 }
 .count-area {
   grid-area: count;
@@ -45,13 +45,18 @@ main {
   background: #ffffff;
   color: #101013;
 }
-.sol-area {
-  grid-area: sol;
+.type-area {
+  grid-area: type;
   background: #ffffff;
   color: #101013;
 }
-.day-area {
-  grid-area: day;
+.launch-area {
+  grid-area: launc;
+  background: #ffffff;
+  color: #101013;
+}
+.arrival-area {
+  grid-area: arriv;
   background: #ffffff;
   color: #101013;
 }

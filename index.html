@@ -2,58 +2,87 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Who is on Mars Today?</title>
+    <title>Who is at Mars Today?</title>
 
     <!-- STYLING -->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css">
     <!-- SCRIPTS -->
-    <script type="text/javascript" src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
-    <script type="text/javascript" src="js/map.js"></script>
-    <script type="text/javascript" src="js/OPMLayer.js"></script>
-    <script type="text/javascript" src="js/OPMBasemaps.js"></script>
+    
   </head>
   <body>
     <main>
       <section class="grid">
         <div class="count-area">
-          <h1>2</h1>
-          <p>active robots are on Mars today.</p>
+          <h1>8</h1>
+          <p>active robots are at Mars today.</p>
           <p>Still no humans.</p>
           <div id="map"></div>
         </div>
-        <!-- <div class="stats-area">
-          <p>active robots are on Mars today. Still no humans.</p>
-        </div> -->
         <div class="name-area">
           <ul>
-            <li>Opportunity</li>
             <li>Curiosity</li>
+            <li>Opportunity</li>
+            <li>MRO</li>
+            <li>2001 Mars Odyssey</li>
+            <li>Mars Express</li>
+            <li>MAVEN</li>
+            <li>Mangalyaan</li>
+            <li>ExoMars TGO</li>
+          </ul>
+        </div>
+        <div class="type-area">
+          <ul>
+            <li>Rover</li>
+            <li>Rover</li>
+            <li>Orbiter</li>
+            <li>Orbiter</li>
+            <li>Orbiter</li>
+            <li>Orbiter</li>
+            <li>Orbiter</li>
+            <li>Orbiter</li>
           </ul>
         </div>
         <div class="origin-area">
           <ul>
-            <li>USA</li>
-            <li>USA</li>
+            <li>NASA</li>
+            <li>NASA</li>
+            <li>NASA</li>
+            <li>NASA</li>
+            <li>ESA</li>
+            <li>NASA</li>
+            <li>ISRO</li>
+            <li>ESA / RFSA</li>
           </ul>
         </div>
-        <div class="sol-area">
+        <div class="launch-area">
           <ul>
-            <li>Sol X</li>
-            <li>Sol X</li>
+            <li>26 Nov 2011</li>
+            <li>07 Jul 2003</li>
+            <li>12 Aug 2005</li>
+            <li>07 Apr 2001</li>
+            <li>02 Jun 2003</li>
+            <li>18 Nov 2013</li>
+            <li>05 Nov 2013</li>
+            <li>14 Mar 2016</li>
           </ul>
         </div>
-        <div class="day-area">
-            <ul>
-              <li>X days</li>
-              <li>X days</li>
-            </ul>
-          </div>
+        <div class="arrival-area">
+          <ul>
+            <li>06 Aug 2012</li>
+            <li>25 Jan 2004</li>
+            <li>10 Mar 2006</li>
+            <li>24 Oct 2001</li>
+            <li>25 Dec 2003</li>
+            <li>22 Sep 2014</li>
+            <li>24 Sep 2014</li>
+            <li>19 Oct 2016</li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer>
         <div>
-          <p>Site & contents © <a href="https://codemacabre.com">CodeMacabre</a> 2017</p>
+          <p>Site & contents © <a href="https://codemacabre.com">CodeMacabre</a> 2018</p>
         </div>
       </footer>
   </body>
