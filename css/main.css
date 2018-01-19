@@ -6,7 +6,7 @@ html, body {
   font-family: sans-serif;
   width: 100vw;
   min-width: 320px;
-  background: #202025;
+  background: #101013;
 }
 
 /* MAIN AREA */
@@ -14,7 +14,7 @@ main {
   position: absolute;
   top: 0px;
   width: 100vw;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 2em);
 }
 .grid {
   display: grid;
@@ -25,40 +25,42 @@ main {
     "count count count count count count count count count"
     "count count count count count count count count count"
     "count count count count count count count count count"
-    "name  name  orig  orig  type  launc launc arriv arriv"
+    "name  name  name  orig  type  launc launc arriv arriv";
+  color: #ffffff;
 }
 .count-area {
   grid-area: count;
-  background: #202025;
-  color: #ffffff;
+  background: #101013;
   text-align: center;
   align-self: center;
-  /* justify-self: center; */
+}
+.count-area p {
+  line-height: 2em;
 }
 .name-area {
   grid-area: name;
-  background: #ffffff;
-  color: #101013;
+  padding: 0.5em 0 0.5em 0.5em;
+  background: #202025;
 }
 .origin-area {
   grid-area: orig;
-  background: #ffffff;
-  color: #101013;
+  padding: 0.5em 0;
+  background: #202025;
 }
 .type-area {
   grid-area: type;
-  background: #ffffff;
-  color: #101013;
+  padding: 0.5em 0;
+  background: #202025;
 }
 .launch-area {
   grid-area: launc;
-  background: #ffffff;
-  color: #101013;
+  padding: 0.5em 0;
+  background: #202025;
 }
 .arrival-area {
   grid-area: arriv;
-  background: #ffffff;
-  color: #101013;
+  padding: 0.5em 0.5em 0 0.5em;
+  background: #202025;
 }
 h1 {
   font-size: 7em;
@@ -66,8 +68,24 @@ h1 {
 P {
   font-size: 1em;
 }
+a:link, a:visited {
+  text-decoration: none;
+  border-bottom: 1px dotted #adadb5;
+  color: #adadb5;
+  transition: 200ms;
+}
+a:hover, a:active, a:focus {
+  text-decoration: none;
+  border-bottom: 1px dotted #ffffff;
+  color: #ffffff;
+  transition: 400ms;
+}
 ul {
   list-style: none;
+}
+li.header {
+  font-weight: bold;
+  padding: 0 0 0.5em 0;
 }
 
 /* FOOTER */
@@ -77,10 +95,12 @@ footer {
   bottom: 0;
   left: 0;
   width: 100vw;
-  height: 50px;
+  height: 1em;
+  padding: 0.5em 0;
   justify-content: right;
-  background: #202025;
+  background: #101013;
 }
 footer p {
   color: #ffffff;
+  font-size: 0.8em;
 }
