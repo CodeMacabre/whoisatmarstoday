@@ -7,84 +7,26 @@
     <!-- STYLING -->
     <link rel="stylesheet" href="css/main.css">
     <!-- SCRIPTS -->
-    
+    <script src="./js/vue.js"></script>
   </head>
   <body>
-    <main>
-      <section class="grid">
-        <div class="count-area">
-          <h1>8</h1>
-          <p>active robots are at Mars today.</p>
-          <p>Still no humans.</p>
-          <div id="map"></div>
-        </div>
-        <div class="name-area">
-          <ul>
-            <li class="header">Name</li>
-            <li>ExoMars TGO</li>
-            <li>Mangalyaan</li>
-            <li>MAVEN</li>
-            <li>Curiosity</li>
-            <li>MRO</li>
-            <li>Opportunity</li>
-            <li>Mars Express</li>
-            <li>2001 Mars Odyssey</li>
-          </ul>
-        </div>
-        <div class="type-area">
-          <ul>
-            <li class="header">Vehicle Type</li>
-            <li>Orbiter</li>
-            <li>Orbiter</li>
-            <li>Orbiter</li>
-            <li>Rover</li>
-            <li>Rover</li>
-            <li>Orbiter</li>
-            <li>Orbiter</li>
-            <li>Orbiter</li>            
-          </ul>
-        </div>
-        <div class="origin-area">
-          <ul>
-            <li class="header">Space agency</li>
-            <li>ESA / RFSA</li>
-            <li>ISRO</li>
-            <li>NASA</li>
-            <li>NASA</li>
-            <li>NASA</li>
-            <li>NASA</li>
-            <li>ESA</li>
-            <li>NASA</li>
-          </ul>
-        </div>
-        <div class="launch-area">
-          <ul>
-            <li class="header">Launch date</li>
-            <li>14 Mar 2016</li>
-            <li>05 Nov 2013</li>
-            <li>18 Nov 2013</li>
-            <li>26 Nov 2011</li>
-            <li>12 Aug 2005</li>
-            <li>07 Jul 2003</li>
-            <li>02 Jun 2003</li>
-            <li>07 Apr 2001</li>
-          </ul>
-        </div>
-        <div class="arrival-area">
-          <ul>
-            <li class="header">Landing / Orbital insertion date</li>
-            <li>19 Oct 2016</li>
-            <li>24 Sep 2014</li>
-            <li>22 Sep 2014</li>
-            <li>06 Aug 2012</li>
-            <li>10 Mar 2006</li>
-            <li>25 Jan 2004</li>
-            <li>25 Dec 2003</li>
-            <li>24 Oct 2001</li>
-          </ul>
-        </div>
+    <main id="app">
+      <section class="count">
+        <h1>8</h1>
+        <p>active robots are at Mars today</p>
+        <p>(still no humans)</p>
+      </section>
+      <section class="list" v-for="object in objects">
+        <h2>{{ object.name }}</h2>
+        <ul>
+          <li>Type: {{ object.type }}</li>
+          <li>Origin: {{ object.origin }}</li>
+          <li>Launch: {{ object.launch }}</li>
+          <li>Arrival: {{ object.arrival }}</li>
+        </ul>
       </section>
     </main>
+    <script src="./js/app.js"></script>
     <footer>
       <div>
         <p>Site & contents © <a href="https://codemacabre.com">CodeMacabre</a> 2018</p>

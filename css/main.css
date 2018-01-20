@@ -7,6 +7,7 @@ html, body {
   width: 100vw;
   min-width: 320px;
   background: #101013;
+  overflow-x: hidden;
 }
 
 /* MAIN AREA */
@@ -14,56 +15,27 @@ main {
   position: absolute;
   top: 0px;
   width: 100vw;
+}
+.count {
+  background: #101013;
+  color: #ffffff;
+  text-align: center;
   height: calc(100vh - 2em);
 }
-.grid {
-  display: grid;
-  height: 100%;
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas:
-    "count count count count count count count count count"
-    "count count count count count count count count count"
-    "count count count count count count count count count"
-    "name  name  name  orig  type  launc launc arriv arriv";
+.list {
+  background: #202025;
   color: #ffffff;
+  margin: 0 0 2em 0;
 }
-.count-area {
-  grid-area: count;
-  background: #101013;
-  text-align: center;
-  align-self: center;
-}
-.count-area p {
+.count p {
   line-height: 2em;
-}
-.name-area {
-  grid-area: name;
-  padding: 0.5em 0 0.5em 0.5em;
-  background: #202025;
-}
-.origin-area {
-  grid-area: orig;
-  padding: 0.5em 0;
-  background: #202025;
-}
-.type-area {
-  grid-area: type;
-  padding: 0.5em 0;
-  background: #202025;
-}
-.launch-area {
-  grid-area: launc;
-  padding: 0.5em 0;
-  background: #202025;
-}
-.arrival-area {
-  grid-area: arriv;
-  padding: 0.5em 0.5em 0 0.5em;
-  background: #202025;
 }
 h1 {
   font-size: 7em;
+}
+h2 {
+  font-size: 2em;
+  margin: 1em 0 0 0;
 }
 P {
   font-size: 1em;
@@ -83,17 +55,13 @@ a:hover, a:active, a:focus {
 ul {
   list-style: none;
 }
-li.header {
-  font-weight: bold;
-  padding: 0 0 0.5em 0;
-}
 
 /* FOOTER */
 footer {
   display: flex;
   position: fixed;
   bottom: 0;
-  left: 0;
+  right: 1em;
   width: 100vw;
   height: 1em;
   padding: 0.5em 0;
