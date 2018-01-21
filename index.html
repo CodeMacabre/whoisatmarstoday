@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- SCRIPTS -->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://unpkg.com/three@0.88.0/build/three.js"></script>
   </head>
   <body>
+    <div id="planetaryxr">
+      <script src="./js/planetaryxr.js"></script>
+    </div>
     <main id="app">
       <section class="count">
         <div id="summary">
@@ -18,14 +22,17 @@
           <p>(still no humans)</p>
         </div>
       </section>
-      <section class="list" v-for="object in objects">
-        <h2><a v-bind:href="object.url" target="_blank">{{ object.name }}</a></h2>
-        <ul>
-          <li>Type: {{ object.type }}</li>
-          <li>Origin: {{ object.origin }}</li>
-          <li>Launch: {{ object.date.launch }}</li>
-          <li>Arrival: {{ object.date.arrival }}</li>
-        </ul>
+      <section class="infopanel">
+        <div class="list" v-for="object in objects">
+          <h2><a v-bind:href="object.url" target="_blank">{{ object.name }}</a></h2>
+          <ul>
+            <li>Type: {{ object.type }}</li>
+            <li>Origin: {{ object.origin }}</li>
+            <li>Launch: {{ object.date.launch }}</li>
+            <li>Arrival: {{ object.date.arrival }}</li>
+          </ul>
+        </div>
+        <p class="about">For more information, visit the <a href="https://codemacabre.com/prj/whoisonmarstoday" target="_blank">project page</a>.</p>
       </section>
     </main>
     <script src="./js/app.js"></script>

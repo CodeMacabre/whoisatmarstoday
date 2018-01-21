@@ -16,29 +16,50 @@ main {
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  margin: 0 0 3em 0;
   background: #101013;
-  box-shadow: 0 10px 15px #101013;
+}
+#planetaryxr {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
 }
 .count {
   display: flex;
   justify-content: center;
-  background: #101013;
+  /* background: #101013; */
   color: #ffffff;
   text-align: center;
+  width: 100vw;
   height: 100vh;
+  /* padding: 0 0 2em 0; */
+  z-index: 3;
+}
+.infopanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  margin: 0 0 3em 0;
+  background: #101013;
+  box-shadow: 0 10px 15px #101013;
+  z-index: 1;
 }
 .list {
   background: #ffffff;
   width: 100vw;
   max-width: 20em;
   color: #101013;
-  margin: 0 0 2em 0;
+  margin: 1em 0 1em 0;
   padding: 2em;
 }
 #summary {
   align-self: center;
+  z-index: 999;
 }
 .count p {
   line-height: 2em;
@@ -52,6 +73,10 @@ h2 {
 }
 P {
   font-size: 1em;
+}
+p.about {
+  margin: 3em 0 0 0;
+  color: #ffffff;
 }
 a:link, a:visited {
   text-decoration: none;
@@ -77,7 +102,7 @@ footer {
   height: 1em;
   padding: 0.5em 0;
   background: #101013;
-  z-index: 1;
+  z-index: 0;
 }
 footer p {
   color: #ffffff;
