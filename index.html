@@ -12,17 +12,19 @@
   <body>
     <main id="app">
       <section class="count">
-        <h1>8</h1>
-        <p>active robots are at Mars today</p>
-        <p>(still no humans)</p>
+        <div id="summary">
+          <h1>{{ objects.length }}</h1>
+          <p>active robots are at Mars today</p>
+          <p>(still no humans)</p>
+        </div>
       </section>
       <section class="list" v-for="object in objects">
         <h2>{{ object.name }}</h2>
         <ul>
           <li>Type: {{ object.type }}</li>
           <li>Origin: {{ object.origin }}</li>
-          <li>Launch: {{ object.launch }}</li>
-          <li>Arrival: {{ object.arrival }}</li>
+          <li>Launch: {{ object.date.launch }}</li>
+          <li>Arrival: {{ object.date.arrival }}</li>
         </ul>
       </section>
     </main>
