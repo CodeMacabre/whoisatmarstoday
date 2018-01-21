@@ -6,7 +6,8 @@
     "date": {
       "launch": "2016-03-14",
       "arrival": "2016-10-19"
-    }
+    },
+    "url": "https://wikipedia.org/wiki/ExoMars_Trace_Gas_Orbiter"
   },
   {
     "name": "Mangalyaan",
@@ -15,7 +16,8 @@
     "date": {
       "launch": "2013-11-05",
       "arrival": "2014-09-24"
-    }
+    },
+    "url": "https://wikipedia.org/wiki/Mars_Orbiter_Mission"
   },
   {
     "name": "MAVEN",
@@ -24,7 +26,8 @@
     "date": {
       "launch": "2013-11-18",
       "arrival": "2014-09-22"
-    }
+    },
+    "url": "https://wikipedia.org/wiki/MAVEN"
   },
   {
     "name": "Curiosity",
@@ -33,7 +36,8 @@
     "date": {
       "launch": "2011-11-26",
       "arrival": "2012-08-06"
-    }
+    },
+    "url": "https://wikipedia.org/wiki/Curiosity_(rover)"
   },
   {
     "name": "MRO",
@@ -42,7 +46,8 @@
     "date": {
       "launch": "2005-08-12",
       "arrival": "2006-03-10"
-    }
+    },
+    "url": "https://wikipedia.org/wiki/Mars_Reconnaissance_Orbiter"
   },
   {
     "name": "Opportunity",
@@ -51,7 +56,8 @@
     "date": {
       "launch": "2003-07-07",
       "arrival": "2004-01-25"
-    }
+    },
+    "url": "https://wikipedia.org/wiki/Opportunity_(rover)"
   },
   {
     "name": "Mars Express",
@@ -60,7 +66,8 @@
     "date": {
       "launch": "2003-06-02",
       "arrival": "2003-12-25"
-    }
+    },
+    "url": "https://wikipedia.org/wiki/Mars_Express"
   },
   {
     "name": "2001 Mars Odyssey",
@@ -69,6 +76,7 @@
     "date": {
       "launch": "2001-04-07",
       "arrival": "2001-10-24"
-    }
+    },
+    "url": "https://wikipedia.org/wiki/2001_Mars_Odyssey"
   }
 ]
