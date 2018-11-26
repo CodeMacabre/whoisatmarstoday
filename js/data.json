@@ -1,5 +1,15 @@
 [
   {
+    "name": "InSight",
+    "type": "Lander",
+    "origin": "NASA",
+    "date": {
+      "launch": "2018-05-05",
+      "arrival": "2018-11-26"
+    },
+    "url": "https://en.wikipedia.org/wiki/InSight"
+  },
+  {
     "name": "ExoMars Trace Gas Orbiter",
     "type": "Orbiter",
     "origin": "ESA / RFSA",
