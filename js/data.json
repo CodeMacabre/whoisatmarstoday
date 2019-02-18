@@ -60,16 +60,6 @@
     "url": "https://wikipedia.org/wiki/Mars_Reconnaissance_Orbiter"
   },
   {
-    "name": "Opportunity",
-    "type": "Rover",
-    "origin": "NASA",
-    "date": {
-      "launch": "2003-07-07",
-      "arrival": "2004-01-25"
-    },
-    "url": "https://wikipedia.org/wiki/Opportunity_(rover)"
-  },
-  {
     "name": "Mars Express",
     "type": "Orbiter",
     "origin": "ESA",
