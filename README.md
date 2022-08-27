@@ -6,11 +6,13 @@
 
 ## Overview
 
-[WhoIsAtMarsToday?](https://whoisatmarstoday.netlify.com) is a web app built with [Vue.js](https://vuejs.org), listing the robots (and eventually humans) currently on the surface of, and on orbit around, Mars.
+[WhoIsAtMarsToday?](https://whoisatmarstoday.netlify.com) is a web app inspired by [How Many People Are In Space Right Now?](https://www.howmanypeopleareinspacerightnow.com/), listing the robots (and eventually humans) currently operational on the surface of, and on orbit around, Mars.
 
 ## Status
 
-This is a work-in-progress, inspired by [How Many People Are In Space Right Now?](https://www.howmanypeopleareinspacerightnow.com/). Currently updated manually, WhoIsAtMarsToday? is in the process of being refactored to automatically update via crowdsourced data.
+Currently updated manually, WhoIsAtMarsToday? is in the process of being refactored to automatically update via crowdsourced data.
+
+This data is scraped from Wikipedia's [List of Missions to Mars](https://en.wikipedia.org/wiki/List_of_missions_to_Mars) and parsed using [`wtf_wikipedia`](https://github.com/spencermountain/wtf_wikipedia). The resulting data is then saved to this repo as a JSON. This process will be automated shortly.
 
 ## License
 
