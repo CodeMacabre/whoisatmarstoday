@@ -1,0 +1,37 @@
+{
+  "name": "whoisatmarstoday",
+  "version": "1.1.0",
+  "description": "A Mars mission tracker",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "test": "vitest --environment jsdom",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codemacabre/whoisatmarstoday.git"
+  },
+  "author": "Myles Lewando",
+  "license": "Hippocratic-2.1",
+  "bugs": {
+    "url": "https://github.com/codemacabre/whoisatmarstoday/issues"
+  },
+  "homepage": "https://github.com/codemacabre/whoisatmarstoday#readme",
+  "dependencies": {
+    "vue": "^3.2.37",
+    "wtf_wikipedia": "^10.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.0.1",
+    "@vue/test-utils": "^2.0.2",
+    "eslint": "^8.21.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "jsdom": "^20.0.0",
+    "sass": "^1.54.5",
+    "vite": "^3.0.4",
+    "vitest": "^0.21.0"
+  }
+}
