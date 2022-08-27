@@ -1,39 +1,43 @@
 <script>
-import MissionObject from '../components/MissionObject.vue'
-import dataset from '../assets/data/mars-missions.json'
-
 export default {
-  data() {
-    return {
-      dataset
-    }
-  },
-  components: {
-    MissionObject
-  },
-  computed: {
-    operationalObjects() {
-      return this.dataset.filter(object => object.Outcome.text === 'Operational')
+  props: {
+    count: {
+      type: Number,
+      required: true
     }
   }
 }
 </script>
 
 <template>
-<section class="count">
-  <div id="summary">
+  <section class="summary">
+    <h1 class="red">Who Is At Mars Today?</h1>
 
-    
-    <h2>{{ operationalObjects.length }}</h2>
-    <span>operational robots are at Mars today</span>
+    <h2>There {{ count !== 1 ? 'are' : 'is' }} <span class="count">{{ count }}</span> operational {{
+        count !== 1 ?
+          'robots' : 'robot'
+    }} at Mars today</h2>
     <p>(still no humans)</p>
-  </div>
-</section>
-<section class="infopanel">
-  <MissionObject
-    class="item"
-    v-for="object in operationalObjects"
-    :data="object"
-  />
-</section>
+  </section>
 </template>
+
+<style scoped lang="scss">
+.summary {
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+    margin: 0 0 2rem 0;
+
+    &.red {
+      color: var(--color-accent);
+    }
+  }
+
+  .count {
+    color: var(--color-accent);
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+}
+</style>

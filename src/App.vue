@@ -1,22 +1,61 @@
 <script>
-import TheHeader from './components/TheHeader.vue'
+import MissionObject from './components/MissionObject.vue'
 import TheSummary from './components/TheSummary.vue'
 
+import dataset from './assets/data/mars-missions.json'
+
 export default {
+  data() {
+    return {
+      dataset
+    }
+  },
   components: {
-    TheHeader,
+    MissionObject,
     TheSummary
+  },
+  computed: {
+    operationalObjects() {
+      return this.dataset.filter(object => object.Outcome.text === 'Operational')
+    }
   }
 }
 </script>
 
 <template>
-<div>
   <header>
-      <TheHeader msg="Who Is At Mars Today?" />
+    <TheSummary :count="operationalObjects.length" />
   </header>
-  <div>
-    <TheSummary />
-  </div>
-</div>
+  <main>
+    <section class="timeline">
+      <div class="line">
+      </div>
+      <ul>
+        <MissionObject class="item" v-for="object in operationalObjects" :data="object" />
+      </ul>
+    </section>
+  </main>
 </template>
+
+<style scoped lang="scss">
+.timeline {
+  position: relative;
+  margin: 3.2rem 0 0 0;
+
+  .line {
+    position: absolute;
+    left: 50%;
+    top: 1rem;
+    bottom: 1rem;
+    display: block;
+    background-color: var(--color-border);
+    // height: 100%;
+    width: 1px;
+  }
+
+  >ul {
+    margin: 0;
+    padding: 0;
+  }
+}
+</style>
