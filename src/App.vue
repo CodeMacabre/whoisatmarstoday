@@ -6,7 +6,7 @@ export default {
   components: {
     TheHeader,
     TheSummary
-}
+  }
 }
 </script>
 

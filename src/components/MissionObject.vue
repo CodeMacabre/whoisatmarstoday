@@ -1,3 +1,13 @@
+<script>
+export default {
+  props: {
+    data: {
+      required: true
+    }
+  }
+}
+</script>
+
 <template>
   <div class="details">
     <h3>
@@ -10,13 +20,3 @@
     </ul>
   </div>
 </template>
-
-<script>
-export default {
-  props: {
-    data: {
-      required: true
-    }
-  }
-}
-</script>
