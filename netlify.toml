@@ -2,3 +2,6 @@
   command = "vite build"
   functions = "netlify/functions"
   publish = "dist"
+
+[functions."update-db"]
+schedule = "0 0 * * *"
