@@ -1,40 +1,58 @@
 <script>
-import MissionObject from './components/MissionObject.vue'
-import TheSummary from './components/TheSummary.vue'
+import DataWrapper from './components/DataWrapper.vue'
+import { useQuery } from '@vue/apollo-composable'
+import gql from 'graphql-tag'
 
-import dataset from './assets/data/mars-missions.json'
+// import dataset from './assets/data/mars-missions.json'
 
 export default {
-  data() {
+  setup() {
+    const { result, loading, error } = useQuery(gql`
+    query getSpacecraft {
+      wikipedia {
+        LaunchDate {
+          text
+        }
+        MissionType {
+          text
+        }
+        Operator {
+          text
+        }
+        Outcome {
+          text
+        }
+        Spacecraft {
+          text
+        }
+        _id
+      }
+    }
+  `)
+
     return {
-      dataset
+      result,
+      loading,
+      error
     }
   },
   components: {
-    MissionObject,
-    TheSummary
-  },
-  computed: {
-    operationalObjects() {
-      return this.dataset.filter(object => object.Outcome.text === 'Operational')
-    }
+    DataWrapper
   }
 }
 </script>
 
 <template>
-  <header>
-    <TheSummary :count="operationalObjects.length" />
-  </header>
-  <main>
-    <section class="timeline">
-      <div class="line">
-      </div>
-      <ul>
-        <MissionObject class="item" v-for="object in operationalObjects" :data="object" />
-      </ul>
-    </section>
-  </main>
+  <div v-if="loading">Loading...</div>
+
+  <div v-else-if="error">Error: {{  error.message  }}</div>
+
+  <div v-else-if="result && result.wikipedia">
+    <!-- {{  result  }} -->
+    <Suspense>
+      <DataWrapper :data="result.wikipedia" />
+    </Suspense>
+  </div>
 </template>
 
 <style scoped lang="scss">

@@ -21,6 +21,11 @@
   },
   "homepage": "https://github.com/codemacabre/whoisatmarstoday#readme",
   "dependencies": {
+    "@apollo/client": "^3.6.9",
+    "@vue/apollo-composable": "^4.0.0-alpha.19",
+    "graphql": "^16.6.0",
+    "graphql-tag": "^2.12.6",
+    "realm-web": "^1.7.1",
     "vue": "^3.2.37",
     "wtf_wikipedia": "^10.0.2"
   },

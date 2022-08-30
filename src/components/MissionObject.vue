@@ -15,14 +15,17 @@ export default {
 </script>
 
 <template>
-  <li class="details">
+  <li class='details' v-if="data.Outcome.text !== 'Operational'">
+    <!-- <p> {{  data.Spacecraft.text  }}: {{  data.Outcome.text  }}</p> -->
+  </li>
+  <li v-else class="details">
     <h3>
-      {{ data.Mission.text }}
+      {{  data.Spacecraft.text  }}
     </h3>
     <ul>
-      <li>Type: {{ data['Mission Type'].text }}</li>
-      <li>Operator: {{ parsedOperator }}</li>
-      <li>Launched: {{ data['Launch Date'].text }}</li>
+      <li>Type: {{  data.MissionType.text  }}</li>
+      <li>Operator: {{  parsedOperator  }}</li>
+      <li>Launched: {{  data.LaunchDate.text  }}</li>
     </ul>
   </li>
 </template>
