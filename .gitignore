@@ -1,1 +1,6 @@
-node_modules
+# Folders
+.netlify/
+node_modules/
+
+# Files
+.env

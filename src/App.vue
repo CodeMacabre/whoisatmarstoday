@@ -15,7 +15,8 @@ export default {
     TheSummary
   },
   computed: {
-    operationalObjects() {
+    filteredData() {
+      console.log(this.dataset)
       return this.dataset.filter(object => object.Outcome.text === 'Operational')
     }
   }
@@ -24,14 +25,14 @@ export default {
 
 <template>
   <header>
-    <TheSummary :count="operationalObjects.length" />
+    <TheSummary :data="filteredData.length" />
   </header>
   <main>
     <section class="timeline">
       <div class="line">
       </div>
       <ul>
-        <MissionObject class="item" v-for="object in operationalObjects" :data="object" />
+        <MissionObject class="item" v-for="object in dataset" :data="object" />
       </ul>
     </section>
   </main>

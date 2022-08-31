@@ -1,6 +1,6 @@
 {
   "name": "whoisatmarstoday",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A Mars mission tracker",
   "main": "index.js",
   "scripts": {
@@ -26,12 +26,10 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.1",
-    "@vue/test-utils": "^2.0.2",
     "eslint": "^8.21.0",
-    "eslint-plugin-vue": "^9.3.0",
-    "jsdom": "^20.0.0",
     "sass": "^1.54.5",
     "vite": "^3.0.4",
     "vitest": "^0.21.0"
-  }
+  },
+  "type": "module"
 }

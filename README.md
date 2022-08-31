@@ -10,9 +10,7 @@
 
 ## Status
 
-Currently updated manually, WhoIsAtMarsToday? is in the process of being refactored to automatically update via crowdsourced data.
-
-This data is scraped from Wikipedia's [List of Missions to Mars](https://en.wikipedia.org/wiki/List_of_missions_to_Mars) and parsed using [`wtf_wikipedia`](https://github.com/spencermountain/wtf_wikipedia). The resulting data is then saved to this repo as a JSON. This process will be automated shortly.
+WhoIsAtMarsToday? automatically updates daily via crowdsourced data. This data is scraped from Wikipedia's [List of Missions to Mars](https://en.wikipedia.org/wiki/List_of_missions_to_Mars), and parsed using [`wtf_wikipedia`](https://github.com/spencermountain/wtf_wikipedia).
 
 ## License
 
