@@ -4,4 +4,4 @@
   publish = "dist"
 
 [functions."update-db"]
-schedule = "0 0 * * *"
+  schedule = "0 0 * * *"

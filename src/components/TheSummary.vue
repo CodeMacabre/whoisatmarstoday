@@ -1,9 +1,9 @@
 <script>
 export default {
   props: {
-    count: {
-      type: Number,
-      required: true
+    data: {
+      required: true,
+      type: Number
     }
   }
 }
@@ -13,10 +13,8 @@ export default {
   <section class="summary">
     <h1 class="red">Who Is At Mars Today?</h1>
 
-    <h2>There {{ count !== 1 ? 'are' : 'is' }} <span class="count">{{ count }}</span> operational {{
-        count !== 1 ?
-          'robots' : 'robot'
-    }} at Mars today</h2>
+    <h2>There {{  data !== 1 ? 'are' : 'is'  }} <span class="count">{{  data  }}</span> operational
+      {{  data !== 1 ? 'robots' : 'robot'  }} at Mars today</h2>
     <p>(still no humans)</p>
   </section>
 </template>

@@ -21,20 +21,12 @@
   },
   "homepage": "https://github.com/codemacabre/whoisatmarstoday#readme",
   "dependencies": {
-    "@apollo/client": "^3.6.9",
-    "@vue/apollo-composable": "^4.0.0-alpha.19",
-    "graphql": "^16.6.0",
-    "graphql-tag": "^2.12.6",
-    "realm-web": "^1.7.1",
     "vue": "^3.2.37",
     "wtf_wikipedia": "^10.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.1",
-    "@vue/test-utils": "^2.0.2",
     "eslint": "^8.21.0",
-    "eslint-plugin-vue": "^9.3.0",
-    "jsdom": "^20.0.0",
     "sass": "^1.54.5",
     "vite": "^3.0.4",
     "vitest": "^0.21.0"
