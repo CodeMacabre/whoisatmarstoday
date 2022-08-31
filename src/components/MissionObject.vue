@@ -16,7 +16,7 @@ export default {
 
 <template>
   <li class='details' v-if="data.Outcome.text !== 'Operational'">
-    <p><strong>{{  data.Spacecraft.text  }}</strong>
+    <p><strong>{{  data.Spacecraft.text  }}</strong>:
       <span v-if="data.Outcome.text.toLowerCase().includes('fail')">
         ❌ {{  data.Outcome.text  }}
       </span>
@@ -28,7 +28,7 @@ export default {
       </span>
     </p>
   </li>
-  <li v-else class="details">
+  <li v-else class="details active">
     <h3>
       {{  data.Spacecraft.text  }}
     </h3>
@@ -47,8 +47,17 @@ export default {
   margin: 1rem auto;
   padding: 1rem;
   display: block;
-  background-color: var(--color-background-soft);
+  background-color: var(--color-background-mute);
   border: 1px var(--color-border) solid;
+
+  &.active {
+    background-color: var(--color-background-soft);
+    // border: 1px var(--color-accent) solid;
+  }
+
+  &.inactive {
+    display: none;
+  }
 
   h3 {
     text-align: center;
