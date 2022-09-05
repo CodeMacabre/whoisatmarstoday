@@ -3,5 +3,9 @@
   functions = "netlify/functions"
   publish = "dist"
 
+[dev]
+  targetPort = 5173
+
 [functions."update-db"]
-  schedule = "0 0 * * *"
+  node_bundler = "esbuild"
+  schedule = "@daily"
