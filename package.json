@@ -1,6 +1,6 @@
 {
   "name": "whoisatmarstoday",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A Mars mission tracker",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/codemacabre/whoisatmarstoday.git"
   },
   "author": "Myles Lewando",
-  "license": "Hippocratic-2.1",
+  "license": "Hippocratic-3.0",
   "bugs": {
     "url": "https://github.com/codemacabre/whoisatmarstoday/issues"
   },
