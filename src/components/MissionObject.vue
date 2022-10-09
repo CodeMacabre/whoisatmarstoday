@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-  <li class='details' v-if="data.Outcome.text !== 'Operational'">
+  <!-- <li class='details' v-if="data.Outcome.text !== 'Operational'">
     <p><strong>{{  data.Spacecraft.text  }}</strong>:
       <span v-if="data.Outcome.text.toLowerCase().includes('fail')">
         ❌ {{  data.Outcome.text  }}
@@ -27,16 +27,16 @@ export default {
         {{  data.Outcome.text  }}
       </span>
     </p>
-  </li>
-  <li v-else class="details active">
+  </li> -->
+  <li v-if="data.Outcome.text === 'Operational'" class="details active">
     <h3>
-      {{  data.Spacecraft.text  }}
+      {{ data.Spacecraft.text }}
     </h3>
     <ul>
-      <li>Status: {{  data.Outcome.text  }}</li>
-      <li>Type: {{  data['Mission Type'].text  }}</li>
-      <li>Operator: {{  parsedOperator  }}</li>
-      <li>Launched: {{  data['Launch Date'].text  }}</li>
+      <li>Status: {{ data.Outcome.text }}</li>
+      <li>Type: {{ data['Mission Type'].text }}</li>
+      <li>Operator: {{ parsedOperator }}</li>
+      <li>Launched: {{ data['Launch Date'].text }}</li>
     </ul>
   </li>
 </template>
