@@ -3489,7 +3489,7 @@
       "text": "Orbiter"
     },
     "Outcome": {
-      "text": "Operational"
+      "text": "Successful"
     },
     "Remarks": {
       "text": "Entered orbit on 24 September 2014. Mission extended to 2022."
@@ -3716,7 +3716,7 @@
       "text": "Lander"
     },
     "Outcome": {
-      "text": "Operational"
+      "text": "Successful"
     },
     "Remarks": {
       "text": "Landed on 26 November 2018."
@@ -4022,7 +4022,7 @@
       "text": "Rover"
     },
     "Outcome": {
-      "text": "Operational"
+      "text": "Successful"
     },
     "Remarks": {
       "text": "Landed on 14 May 2021 Deployed by the Tianwen-1 lander on 22 May 2021."
@@ -4212,7 +4212,7 @@
       "text": "Helicopter"
     },
     "Outcome": {
-      "text": "Operational"
+      "text": "Successful"
     },
     "Remarks": {
       "text": "First aerodynamic flight on another planet. Landed with Perseverance rover on 18 February 2021. Deployed from rover on 3 April 2021. First flight achieved on April 19, 2021.",
